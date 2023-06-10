@@ -7,6 +7,13 @@
 #Connect
 #Each API in graph has a certain permission scope required
 
+# Prerequisite (MasOS)
+# 1. Install PowerShell: If you don't have PowerShell installed on your macOS, you can download and install it from the official Microsoft PowerShell GitHub repository.
+# 2. Install the Microsoft Graph PowerShell SDK: Open a terminal window and run the following command to install the Microsoft Graph PowerShell module:
+Install-Module -Name Microsoft.Graph
+# 3. Connect to Microsoft Graph: Once the module is installed, import the Microsoft Graph module by running the command:
+Import-Module -Name Microsoft.Graph
+
 #https://docs.microsoft.com/en-us/graph/permissions-reference
 #Application.Read.All to read the service principals
 Connect-MgGraph -Scopes "Application.Read.All"
